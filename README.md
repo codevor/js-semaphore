@@ -27,8 +27,8 @@ As a common solver for deadlocks avoidance, we found an util lib to create and t
 `js-semaphore` is available with npm/yarn:
 
 ```bash
-$ npm install js-semaphore --save
-$ yarn add js-semaphore
+$ npm install @codevor/js-semaphore --save
+$ yarn add @codevor/js-semaphore
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ $ yarn add js-semaphore
 ### With ES6/import
 
 ```js
-import { Semaphore } from 'js-semaphore';
+import { Semaphore } from '@codevor/js-semaphore';
 
 // Semaphore with 1 resource = Mutex
 const semaphore = Semaphore();
@@ -60,7 +60,7 @@ semaphore.acquire().then(() => {
 ### With require
 
 ```js
-const Semaphore = require('js-semaphore').Semaphore;
+const Semaphore = require('@codevor/js-semaphore').Semaphore;
 
 // Semaphore with 1 resource = Mutex
 const semaphore = Semaphore();
@@ -86,7 +86,7 @@ semaphore.acquire().then(() => {
 If you want, you can control the timeout. We **hardly** suggest not let this below `0.2s`, but you can try if you want.
 
 ```js
-import { Semaphore, setTimespan, timespan } from 'js-semaphore';
+import { Semaphore, setTimespan, timespan } from '@codevor/js-semaphore';
 
 // creates the Semaphore
 const semaphore = Semaphore();

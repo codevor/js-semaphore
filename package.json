@@ -1,5 +1,5 @@
 {
-  "name": "js-semaphore",
+  "name": "@codevor/js-semaphore",
   "version": "0.1.0",
   "description": "🚦Semaphore Implementation for JS",
   "main": "dist/js-semaphore.js",
