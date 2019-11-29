@@ -5,7 +5,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const isProduction = process.env.NODE_ENV === 'production';
 const mode = isProduction ? 'production' : 'development';
 
-const libraryName = 'js-library-boilerplate';
+const libraryName = 'js-semaphore';
 
 module.exports = {
   mode,

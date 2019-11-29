@@ -1,0 +1,1 @@
+export const SEMAPHORE_TIMESPAN_SECONDS = 0.5;
