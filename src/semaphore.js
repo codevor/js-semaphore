@@ -10,10 +10,13 @@ const Semaphore = ({ resources = 1, start = resources } = {}) => {
     }
 
     return new Promise(resolve => {
-      setTimeout(() => {
-        acquire().then(() => {
+      const acquireInterval = setInterval(() => {
+        if (counter > 0) {
+          counter -= 1;
+          clearInterval(acquireInterval);
+
           resolve();
-        });
+        }
       }, timespan() * 1000);
     });
   };
