@@ -1,6 +1,6 @@
 {
   "name": "@codevor/js-semaphore",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "🚦Semaphore Implementation for JS",
   "main": "dist/js-semaphore.js",
   "unpkg": "dist/js-semaphore.min.js",
